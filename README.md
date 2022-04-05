@@ -43,10 +43,8 @@ git add .
 ```
 git reset
 ```
-
-```
-git clean -
-```
+Удалить незафиксированные изменения
+[`git clean`](https://www.atlassian.com/ru/git/tutorials/undoing-changes/git-clean)
 
 Сделать комит
 ```
