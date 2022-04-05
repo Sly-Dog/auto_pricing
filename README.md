@@ -1,5 +1,5 @@
 # Минимальный сет для командной работы
-
+## Начало работы
 1. Скопировать репозиторий на компьютер. Появится папка там, где был открыт git bash
 ```
 git clone https://github.com/Sly-Dog/auto_pricing
@@ -8,55 +8,83 @@ git clone https://github.com/Sly-Dog/auto_pricing
 После загрузки - закрываем
 
 2. Открываем папку auto_pricing в ней жмякаем git bash - Готово
-
+## Наиболее частые команды
 Создать ветку. Ветки используем для любой фичи. Для любого отдельного ноутбука. Они нужны для разделения работы.
 ```
 git checkout -b <name of the branch>
 ```
+---
 
 Узнать, какие есть ветки
 ```
 git branch
 ```
-
+---
 Перейти в ветку для того, чтобы работать в ней.
 ```
 git checkout <name of the branch>
 ```
-
+---
 Узнать статус изменений
 ```
 git status
 ```
-
+---
 Выбрать изменения в комит
 ```
 git add <filename>
 ```
-
+---
 Выбрать все изменения в комит
 ```
 git add .
 ```
+---
 
 Отменяет добавление в комит
 ```
 git reset
 ```
+---
 Удалить незафиксированные изменения
-[`git clean`](https://www.atlassian.com/ru/git/tutorials/undoing-changes/git-clean)
-
+[git clean](https://www.atlassian.com/ru/git/tutorials/undoing-changes/git-clean)
+---
 Сделать комит
 ```
 git commit -m"Информативное название комита"
 ```
-
+---
 Ура! Можно отразить изменения на сервере, чтобы остальные могли узнать, что произошло
 ```
 git push
 ```
-
-Запросить изменения
+---
+Запросить изменения для того, чтобы влить в основую ветку
 ```
 git pull
 ```
+
+## Работа с ветками
+Нарисовать граф изменений со всеми ветками. Там будут отображаться хеши -
+длинные коды
+```
+git log --graph --all
+```
+
+хеши - по сути тоже названия веток, они отражают предыдущие изменения. 
+`git checkout hash` - откратиться на выбранное изменение
+
+---
+
+Если ты уверен и ответственнен, то ты можешь сливать ветки сам. Cледующий
+код вливает указанную ветку в ту, на которой ты сейчас находишься. Так можно
+посмотреть самому, правильно ли все в логике ноутбуков.
+```
+git merge <branch>
+```
+Есть метод rebase, он обновляет основную ветку для комитов твоей ветки, вот как это выглядт
+![](https://joprblob.azureedge.net/site/blog/50fa5f40-93ac-475e-895d-8724cc761d19/rebase.gif)
+---
+[Анимации методов](https://bool.dev/blog/detail/vizualizatsiya-poleznykh-git-komand)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GsG5roSGha0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
