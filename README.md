@@ -93,3 +93,5 @@ git merge <branch>
 - [Разбираемся как ходить по комиттам git: checkout](https://youtu.be/jXKdGIV7O3w)
 - [бранчевание/ветвление в git](https://youtu.be/GYVXVu7qgCE)
 - [Git - Pull request на практике / GitHub](https://youtu.be/G_HKJJLozUc)
+
+[Курс полноценный](https://youtu.be/xzEMA7rzN3Y)
