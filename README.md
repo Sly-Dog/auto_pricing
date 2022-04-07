@@ -14,7 +14,7 @@
 Можно вводить сразу несколько команд
 ```
 git switch main
-git switch second
+git log
 ```
 
 
